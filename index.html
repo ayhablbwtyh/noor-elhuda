@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>منصة نور الهدى | علوم إسلامية وأدب</title>
+    <meta name="description" content="منصة إسلامية شاملة تحتوي على محاضرات صوتية، مقالات أدبية، ودروس فقهية.">
+    <meta name="keywords" content="إسلام ويب, مواد إسلامية, صوتيات إسلامية, شعر إسلامي, محاضرات">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/all.min.css">
+
+    <style>
+        :root {
+            --main-green: #064e3b;
+            --gold: #d4af37;
+            --bg-color: #fdfcf0;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            color: #333;
+        }
+
+        /* رأس الموقع */
+        header {
+            background-color: var(--main-green);
+            color: white;
+            padding: 30px 5%;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        .search-box {
+            margin-top: 20px;
+            max-width: 500px;
+            width: 90%;
+            padding: 12px;
+            border-radius: 25px;
+            border: none;
+            font-family: 'Tajawal';
+        }
+
+        /* القائمة */
+        nav {
+            background: white;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--main-green);
+            font-weight: bold;
+        }
+
+        /* المحتوى الرئيسي */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-family: 'Amiri', serif;
+            color: var(--main-green);
+            font-size: 2.5rem;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        /* بطاقات المواد */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid var(--gold);
+        }
+
+        .card h3 { color: var(--main-green); margin-bottom: 10px; }
+
+        /* مشغل صوتي بسيط */
+        .audio-preview {
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* تذييل الموقع */
+        footer {
+            background: var(--main-green);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-family: 'Amiri', serif; font-size: 3rem;">مَنصة نُور الهُدى</h1>
+    <p>مرجعك الرقمي للعلوم الإسلامية والأدب العربي</p>
+    <input type="text" class="search-box" placeholder="ابحث في أكثر من 600 مادة صوتية ومقال...">
+</header>
+
+<nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">المكتبة الصوتية</a>
+    <a href="#">المقالات</a>
+    <a href="#">عن المنصة</a>
+</nav>
+
+<div class="container">
+    <h2 class="section-title">أحدث الصوتيات</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>محاضرة: آداب طالب العلم</h3>
+ ]           <p>درس قيم يتناول الأخلاق التي يجب أن يتحلى بها المسلم في طلب العلم.</p>
+            <div class="audio-preview">
+                <span><i class="fas fa-play-circle"></i> 15:40 دقيقة</span>
+                <button style="background: var(--main-green); color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">تشغيل</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>سلسلة القصائد الزهدية</h3>
+            <p>مختارات من أجمل ما قيل في الزهد والرقائق بصوت عذب.</p>
+            <div class="audio-preview">
+                <span><i class="fas fa-play-circle"></i> 08:20 دقيقة</span>
+                <button style="background: var(--main-green); color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">تشغيل</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title" style="margin-top: 50px;">ركن الأدب والحكمة</h2>
+    <div class="card" style="border-right: 10px solid var(--gold);">
+        <p style="font-family: 'Amiri', serif; font-size: 1.5rem; line-height: 1.8; text-align: center;">
+            "وإذا العنايةُ لاحظتْكَ عُيُونُها .. نَمْ فالمخاوفُ كُلُّهُنَّ أمانُ"
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>جميع الحقوق محفوظة © 2026 | منصة نور الهدى</p>
+    <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">تم التصميم ليكون متوافقاً مع معايير جوجل للبحث</p>
+</footer>
+
+</body>
+</html>
